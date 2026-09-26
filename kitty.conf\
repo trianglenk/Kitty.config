@@ -1,0 +1,260 @@
+map ctrl+c copy_to_clipboard
+map ctrl+v paste_from_clipboard
+
+
+# ─────────────────────────────────────
+# Шрифт
+# ─────────────────────────────────────
+
+# Основной шрифт терминала
+font_family JetBrainsMono Nerd Font
+
+# Автоматически использовать варианты шрифта
+# для жирного и курсивного текста
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+# Размер шрифта
+font_size 13.0
+
+
+# ─────────────────────────────────────
+# Цвета
+# ─────────────────────────────────────
+
+# Цвет обычного текста
+foreground #d8dee9
+
+# Цвет фона терминала
+background #0b0f0f
+
+# Цвет курсора
+cursor #CCFFE5
+
+# Цвет текста под курсором
+cursor_text_color #1e222a
+
+# Цвет выделенного текста
+selection_fground #1e222a
+selection_background #AEE4B6
+
+
+# ─────────────────────────────────────
+# Цветовая палитра Nord
+# ─────────────────────────────────────
+
+# Обычные цвета терминала:
+# 0 — чёрный
+# 1 — красный
+# 2 — зелёный
+# 3 — жёлтый
+# 4 — синий
+# 5 — пурпурный
+# 6 — бирюзовый
+# 7 — белый
+
+color0 #3b4252
+color1 #bf616a
+color2 #a3be8c
+color3 #ebcb8b
+color4 #81a1c1
+color5 #b48ead
+color6 #88c0d0
+color7 #e5e9f0
+
+# Яркие варианты цветов
+
+color8  #4c566a
+color9  #d08770
+color10 #a3be8c
+color11 #ebcb8b
+color12 #81a1c1
+color13 #b48ead
+color14 #8fbcbb
+color15 #eceff4
+
+
+# ─────────────────────────────────────
+# Курсор
+# ─────────────────────────────────────
+
+# Форма курсора:
+# block — прямоугольник
+# beam  — вертикальная линия
+# underline — нижнее подчёркивание
+cursor_shape beam
+
+# Толщина курсора
+cursor_beam_thickness 1.5
+
+# Скорость мигания курсора
+cursor_blink_interval 0.6
+
+# Остановить мигание через 15 секунд
+# после прекращения ввода
+cursor_stop_blinking_after 15
+
+
+# ─────────────────────────────────────
+# Окно терминала
+# ─────────────────────────────────────
+
+# Внутренний отступ от текста до краёв окна
+window_padding_width 12
+
+# Внешний отступ окна
+window_margin_width 2
+
+# Убрать внешний отступ, если открыто только одно окно
+single_window_margin_width 0
+
+# Толщина рамки окна
+window_border_width 1.3pt
+
+# Цвет рамки активного окна
+active_border_color #3B4252
+
+# Цвет рамки неактивного окна
+inactive_border_color #3b4252
+
+# Прозрачность фона:
+# 1.0 — полностью непрозрачный
+# 0.0 — полностью прозрачный
+background_opacity 0.96
+
+# Разрешить динамическое изменение прозрачности
+dynamic_background_opacity yes
+
+
+# ─────────────────────────────────────
+# История терминала и мышь
+# ─────────────────────────────────────
+
+# Количество строк, доступных для прокрутки назад
+scrollback_lines 10000
+
+# Скорость прокрутки колёсиком мыши
+wheel_scroll_multiplier 3.0
+
+# Скрывать курсор мыши через 3 секунды
+# после перемещения
+mouse_hide_wait 3.0
+
+
+# ─────────────────────────────────────
+# Вкладки
+# ─────────────────────────────────────
+
+# Расположение панели вкладок
+tab_bar_edge top
+
+# Выравнивание вкладок
+tab_bar_align center
+
+# Форма разделителей вкладок
+tab_powerline_style slanted
+
+# Показывать панель только при наличии
+# двух и более вкладок
+tab_bar_min_tabs 2
+
+# Отступ панели вкладок по горизонтали
+tab_bar_margin_width 0
+
+# Отступ панели вкладок по вертикали
+tab_bar_margin_height 4 4
+
+# Цвет фона панели вкладок
+tab_bar_background #3B4252
+
+# Цвет текста активной вкладки
+active_tab_foreground #3B4252
+
+# Цвет фона активной вкладки
+active_tab_background #DBE4E6
+
+# Жирный текст активной вкладки
+active_tab_font_style bold
+
+# Цвет текста неактивной вкладки
+inactive_tab_foreground #aeb7c6
+
+# Цвет фона неактивной вкладки
+inactive_tab_background #1F242C
+
+# Обычный стиль текста неактивной вкладки
+inactive_tab_font_style normal
+
+# Символ активности вкладки
+tab_activity_symbol "*"
+
+# Максимальная длина названия вкладки
+tab_title_max_length 35
+
+# Формат названия вкладки
+# {index} — номер вкладки
+# {title} — её название
+tab_title_template "{index}: {title}"
+
+# Формат активной вкладки
+active_tab_title_template "{index}: {title}"
+
+# ─────────────────────────────────────
+# Раскладка окон
+# ─────────────────────────────────────
+
+# Используем вертикальную раскладку Tall
+# и разрешаем другие раскладки
+enabled_layouts Tall, *
+
+
+# ─────────────────────────────────────
+# Горячие клавиши
+# ─────────────────────────────────────
+
+
+# Создать новое окно в текущей папке
+map ctrl+shift+enter new_window_with_cwd
+
+# Перейти к следующему окну
+map ctrl+shift+] next_window
+
+# Перейти к предыдущему окну
+map ctrl+shift+[ previous_window
+
+# Закрыть текущее окно
+map ctrl+shift+w close_window
+
+
+# Создать новую вкладку в текущей папке
+map ctrl+shift+t new_tab_with_cwd
+
+# Перейти к следующей вкладке
+map ctrl+shift+right next_tab
+
+# Перейти к предыдущей вкладке
+map ctrl+shift+left previous_tab
+
+# Закрыть текущую вкладку
+map ctrl+shift+q close_tab
+
+
+# Переключить раскладку окон
+map ctrl+shift+l next_layout
+
+# Переключиться на вертикальную раскладку
+map ctrl+alt+t goto_layout tall
+
+# Переключиться на раскладку stack
+map ctrl+alt+s goto_layout stack
+
+
+# Увеличить размер шрифта
+map ctrl+plus change_font_size all 1.0
+
+# Уменьшить размер шрифта
+map ctrl+minus change_font_size all -1.0
+
+# Вернуть стандартный размер шрифта
+map ctrl+0 change_font_size all 0
