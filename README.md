@@ -1,2 +1,1 @@
-# Kitty.config
-Kitty.config
+
